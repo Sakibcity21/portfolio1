@@ -9,7 +9,7 @@
 
 body{
     /* background-image: linear-gradient(to right, #0270AC , #6FF9B9); */
-    background-image: url('Oceanic2021.jpeg');
+    background-image: url('pics/Oceanic2021.jpeg');
     background-repeat:no-repeat ;
     background-size: cover;
     padding: 2rem 1rem;
@@ -35,6 +35,7 @@ body{
     /* max-width: 90rem; */
     gap: 1rem;    
     margin-inline: .25em;
+    position: relative;
 }
 .intro{
     grid-area: box1;
@@ -46,7 +47,7 @@ body{
         'i2'
     ;
     gap: .5rem;
-    position: fixed;
+    position:fixed;
 }
 .iex2{
     grid-area: box3;
@@ -94,23 +95,26 @@ body{
 
 }
 .card-logo {
-    width: 58.5%;
+    /* width: 58.5%; */
     height: 200px;
     background: aliceblue;
     padding: .6em ;
     padding-bottom: 1.5em;
     margin: .6em;
     border-radius: 6px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
   }
   .card-image-logo {
     background-color: rgba(196, 227, 255, 0.911) ;
-    width: 130px;
+    width: 128px;
     height: 85%;
     border-radius: 6px ;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('sakib.png');
+    background-image: url('pics/sakib.png');
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -348,7 +352,7 @@ body{
 .skills-content{
     display: flex;
     justify-content: start;
-    
+    align-items: space-between;
 }
 
 /* .svg1{
@@ -380,7 +384,7 @@ body{
 .projects-content{
     display: flex;
     justify-content: start;
-   
+    align-items: space-between;
 }
 .card {
     width: 250px;
@@ -394,17 +398,17 @@ body{
   }
 
 #Amazon{
-    background-image: url('amazon.png');
+    background-image: url('pics/amazon.png');
     box-sizing: border-box;
     background-size: cover;
 }
 #Emphony{
-    background-image: url('EMPHONY.png');
+    background-image: url('pics/EMPHONY.png');
     box-sizing: border-box;
     background-size: cover;
 }
 #VISTA{
-    background-image: url('VISTA.png');
+    background-image: url('pics/VISTA.png');
     box-sizing: border-box;
     background-size: cover;
 }
@@ -470,7 +474,7 @@ body{
     padding: 3em 3.5em;
     display: grid;
     gap: 1em;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 0.75fr 1.25fr ;
     grid-template-rows: 1fr 1fr 1fr 2fr ;
     grid-template-areas: 
         'b1 b1'
@@ -543,7 +547,7 @@ body{
     grid-area: b9;
     /* width: 100%;
     height: 200px; */
-    background-image: url('contact.svg');
+    background-image: url('svg/contact.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -560,3 +564,236 @@ body{
     
 }
 
+@media screen and (max-width:600px){
+    
+    .portfolio-main{
+        display: grid;
+        grid-template-columns: 1fr;
+        /* grid-template-rows: .5fr 1fr 1fr 1fr; */
+        grid-template-areas:
+            'box1'
+            'box2'
+            'box4'
+            'box6'
+        ;
+        /* max-width: 80rem; */
+        gap: 1rem;    
+        margin-inline: 2em;
+        /* position: relative; */
+    }
+
+    .intro{
+        grid-area: box1;
+        display: grid;
+        grid-template-columns: 1fr;
+        /* grid-template-rows: .25fr 4.75fr; */
+        grid-template-areas: 
+            'i1'
+            'i2'
+        ;
+        gap: .5rem;
+        /* position: absolute; */
+    }
+
+    #main1{
+        grid-area: box2;
+        display: grid;    
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 1rem;
+        grid-template-areas: 
+            'column1' 
+            'column2'
+            'column3'
+            ;
+    }
+    #main2{
+        grid-area: box4;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr;
+        gap: 1rem;
+        grid-template-areas: 
+            'column4' 
+            'column5'
+        ;
+    }
+
+    .skills-content{
+        display: block;
+        /* justify-content: center;
+        align-items: ; */
+    }
+    .card-s1{
+        margin-left: .5em;
+      }
+      .projects-content{
+        display: block;
+        /* justify-content: start;
+        align-items: space-between; */
+    }
+    .card1{
+        margin-left: .8em;
+      }
+    #main3{
+        grid-area: box6;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr;
+        gap: 1rem;
+        grid-template-areas: 
+            'column6'
+            ;
+    }
+
+    .contact{
+        grid-area: column6;
+        background-color: rgba(218, 237, 255, 0.4) ;
+        backdrop-filter: blur(10px);
+        padding: 3em 3.5em;
+        display: grid;
+        gap: 1em;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 2fr ;
+        grid-template-areas: 
+            'b1 b1'
+            'b3 b9'
+            'b5 b9'
+            'b7 b9'
+            'b8 b9'
+        ;
+    
+    }
+
+    .iex4{
+        grid-area: b9;
+        /* width: 100%;
+        height: 200px; */
+        background-image: url('');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        
+    }
+
+}
+
+
+/* @media only screen and (min-width:600px) and (max-width:900px){
+    sakib
+} */
+
+
+@media screen and (max-width:425px){
+    
+    .portfolio-main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .25fr 1fr 1fr 1fr;
+        grid-template-areas:
+            'box1'
+            'box2'
+            'box4'
+            'box6'
+        ;
+        /* max-width: 80rem; */
+        gap: 1rem;    
+        margin-inline: 2em;
+        /* position: relative; */
+    }
+
+    .intro{
+        grid-area: box1;
+        display: grid;
+        grid-template-columns: 1fr;
+        /* grid-template-rows: .25fr 4.75fr; */
+        grid-template-areas: 
+            'i1'
+            'i2'
+        ;
+        gap: .5rem;
+        /* position: absolute; */
+    }
+
+    #main1{
+        grid-area: box2;
+        display: grid;    
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 1rem;
+        grid-template-areas: 
+            'column1' 
+            'column2'
+            'column3'
+            ;
+    }
+    #main2{
+        grid-area: box4;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr;
+        gap: 1rem;
+        grid-template-areas: 
+            'column4' 
+            'column5'
+        ;
+    }
+
+    .skills-content{
+        display: block;
+        /* justify-content: center;
+        align-items: ; */
+    }
+    .card-s1{
+        margin-left: .5em;
+      }
+      .projects-content{
+        display: block;
+        /* justify-content: start;
+        align-items: space-between; */
+    }
+    .card1{
+        margin-left: .8em;
+      }
+    #main3{
+        grid-area: box6;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr;
+        gap: 1rem;
+        grid-template-areas: 
+            'column6'
+            ;
+    }
+
+    .contact{
+        grid-area: column6;
+        background-color: rgba(218, 237, 255, 0.4) ;
+        backdrop-filter: blur(10px);
+        padding: 3em 3.5em;
+        display: grid;
+        gap: 1em;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 2fr ;
+        grid-template-areas: 
+            'b1 b1'
+            'b3 b9'
+            'b5 b9'
+            'b7 b9'
+            'b8 b9'
+        ;
+    
+    }
+
+    .iex4{
+        grid-area: b9;
+        /* width: 100%;
+        height: 200px; */
+        background-image: url('');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        
+    }
+
+}
