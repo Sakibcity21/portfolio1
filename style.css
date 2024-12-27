@@ -12,7 +12,7 @@ body{
     background-image: url('pics/Oceanic2021.jpeg');
     background-repeat:no-repeat ;
     background-size: cover;
-    padding: 2rem 1rem;
+    padding: 2rem 0rem;
     /* color: white; */
 }
 
@@ -47,7 +47,7 @@ body{
         'i2'
     ;
     gap: .5rem;
-    position:fixed;
+    /* position:fixed; */
 }
 .iex2{
     grid-area: box3;
@@ -689,7 +689,7 @@ body{
     .portfolio-main{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: .25fr 1fr 1fr 1fr;
+        grid-template-rows: .25fr .5fr 1fr .05fr;
         grid-template-areas:
             'box1'
             'box2'
