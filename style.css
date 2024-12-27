@@ -12,7 +12,7 @@ body{
     background-image: url('pics/Oceanic2021.jpeg');
     background-repeat:no-repeat ;
     background-size: cover;
-    padding: 2rem 1rem;
+   
     /* color: white; */
 }
 
@@ -33,6 +33,7 @@ body{
         'box5 box6'
     ;
     /* max-width: 90rem; */
+    padding: 2rem 1rem;
     gap: 1rem;    
     margin-inline: .25em;
     position: relative;
@@ -558,7 +559,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem ;
+    margin-bottom: 1.5rem ;
     color: #ffffff;
     font-size: 15px;
     
