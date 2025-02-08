@@ -501,6 +501,9 @@ body{
     grid-area: b6;
     padding-top: 2em;
 }
+#i0{
+    display:none;
+}
 #i1{
     grid-area: b3;
     padding: 1em;
